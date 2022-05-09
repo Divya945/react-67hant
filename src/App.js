@@ -5,6 +5,7 @@ import Jsxextension from './Components/Jsxextension';
 import Studentdetails from './Components/CustomizeComponentswithprops/Studentdetails';
 import AnimalDetails from './Components/WrapperComponentswithProps/AnimalDetails';
 import Productpurchae from './Components/StateinClassComponent/Productpurchae';
+import Itemspurchse from './Components/StatewithHooksComponent/Itemspurchse';
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 //Need to State with Hooks hgh
 export default function App() {
@@ -28,6 +29,9 @@ export default function App() {
             <li>
               <Link to="/Productpurchae">Online purchase</Link>
             </li>
+            <li>
+              <Link to="/Itemspurchse">Items purchase</Link>
+            </li>
           </ul>
         </nav>
         <Routes>
@@ -48,6 +52,7 @@ export default function App() {
             path="/Productpurchae"
             element={<Productpurchae />}
           ></Route>
+          <Route exact path="/Itemspurchse" element={<Itemspurchse />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
