@@ -16,7 +16,7 @@ export default function App() {
           <ul>
             <li>
               <Link to="/">Introduction</Link>
-            </li>
+            </li> 
             <li>
               <Link to="/jsxextension">Jsx Elements</Link>
             </li>
